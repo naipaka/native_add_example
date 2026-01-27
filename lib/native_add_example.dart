@@ -106,3 +106,6 @@ Future<SendPort> _helperIsolateSendPort = () async {
   // can start sending requests.
   return completer.future;
 }();
+
+/// A native function which multiplies two integers.
+int multiply(int a, int b) => bindings.multiply(a, b);
